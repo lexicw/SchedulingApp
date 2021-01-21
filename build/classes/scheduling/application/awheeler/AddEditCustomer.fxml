@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduling.application.awheeler.AddEditCustomerController">
+   <children>
+      <Label layoutX="46.0" layoutY="82.0" text="Customer ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="120.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="156.0" text="Street:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="298.0" text="Phone:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustId" disable="true" editable="false" layoutX="174.0" layoutY="83.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="txtName" layoutX="174.0" layoutY="121.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="txtAddress" layoutX="174.0" layoutY="157.0" prefHeight="25.0" prefWidth="162.0" />
+      <ComboBox fx:id="cbCity" layoutX="174.0" layoutY="194.0" onAction="#cityCBChange" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="txtCountry" editable="false" layoutX="174.0" layoutY="229.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="txtZip" layoutX="174.0" layoutY="264.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="txtPhone" layoutX="174.0" layoutY="299.0" prefHeight="25.0" prefWidth="162.0" />
+      <Button layoutX="109.0" layoutY="352.0" mnemonicParsing="false" onAction="#save" prefHeight="46.0" prefWidth="103.0" text="Save" />
+      <Button layoutX="233.0" layoutY="352.0" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="103.0" text="Cancel" />
+      <Label fx:id="lblTitle" layoutX="47.0" layoutY="26.0" prefHeight="40.0" prefWidth="301.0" text="Title" textAlignment="CENTER" textFill="#7fc7dd">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="193.0" text="City:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="263.0" text="Zip:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="228.0" text="Country:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

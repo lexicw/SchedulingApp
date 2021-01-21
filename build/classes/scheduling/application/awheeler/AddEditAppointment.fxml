@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduling.application.awheeler.AddEditAppointmentController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="37.0" layoutY="36.0" prefHeight="40.0" prefWidth="301.0" text="Title" textAlignment="CENTER" textFill="#7fc7dd">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="93.0" text="Appointment ID: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="138.0" text="Customer ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="183.0" text="Customer Name: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="229.0" text="Type:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="277.0" text="Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="327.0" text="Start Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveBtn" layoutX="182.0" layoutY="440.0" mnemonicParsing="false" onAction="#save" prefHeight="47.0" prefWidth="99.0" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="305.0" layoutY="440.0" mnemonicParsing="false" onAction="#cancel" prefHeight="47.0" prefWidth="99.0" text="Cancel" />
+      <TextField fx:id="txtAptId" disable="true" editable="false" layoutX="214.0" layoutY="94.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="txtCustId" disable="true" layoutX="215.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" />
+      <TextField fx:id="txtType" layoutX="215.0" layoutY="230.0" prefHeight="25.0" prefWidth="188.0" />
+      <DatePicker fx:id="txtDate" layoutX="217.0" layoutY="278.0" prefHeight="25.0" prefWidth="188.0" />
+      <ComboBox fx:id="cbStart" layoutX="217.0" layoutY="328.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="38.0" layoutY="376.0" text="End Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbEnd" layoutX="217.0" layoutY="377.0" prefHeight="25.0" prefWidth="188.0" />
+      <ComboBox fx:id="customerCB" layoutX="215.0" layoutY="184.0" onAction="#setCustId" prefHeight="25.0" prefWidth="188.0" />
+   </children>
+</Pane>
